@@ -1,5 +1,5 @@
 <div align = center>
-  <img src="https://raw.githubusercontent.com/D-Sketon/blog-img/main/icon.png"/>
+  <img src="https://fastly.jsdelivr.net/gh/D-Sketon/blog-img/icon.png"/>
   <h1>reimu-mc-generator</h1>
   <h4>Generate minecraft player and server information images with reimu-mc-generator.</h4>
 </div>
@@ -60,7 +60,7 @@ await drawPlayerInfo(
 );
 ```
 
-![player.png](./example/player.png)
+![player.png](https://fastly.jsdelivr.net/gh/D-Sketon/reimu-mc-generator/example/player.png)
 
 ### Server Info
 
@@ -83,7 +83,7 @@ await drawServerInfo(
 );
 ```
 
-![server.png](./example/server.png)
+![server.png](https://fastly.jsdelivr.net/gh/D-Sketon/reimu-mc-generator/example/server.png)
 
 ## License
 
