@@ -9,7 +9,7 @@
   },
   "author": "D-Sketon",
   "license": "GPL-3.0-or-later",
-  "description": "",
+  "description": "Generate minecraft player and server information images with reimu-mc-generator.",
   "dependencies": {
     "axios": "^1.7.3",
     "canvas": "2.10.2",
@@ -19,5 +19,17 @@
     "@types/node": "^22.5.0",
     "tsx": "^4.17.0",
     "typescript": "^5.5.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D-Sketon/reimu-mc-generator.git"
+  },
+  "homepage": "https://github.com/D-Sketon/reimu-mc-generator#readme",
+  "bugs": {
+    "url": "https://github.com/D-Sketon/reimu-mc-generator/issues"
+  },
+  "keywords": [
+    "minecraft",
+    "canvas"
+  ]
 }

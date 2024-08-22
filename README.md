@@ -47,6 +47,8 @@ function drawServerInfo(
 ### Player Info
 
 ```ts
+import { drawPlayerInfo, drawServerInfo } from "reimu-mc-generator";
+
 await drawPlayerInfo(
   "D_Sketon",
   [
