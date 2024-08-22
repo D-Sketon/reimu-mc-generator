@@ -47,7 +47,7 @@ function drawServerInfo(
 ### Player Info
 
 ```ts
-import { drawPlayerInfo, drawServerInfo } from "reimu-mc-generator";
+import { drawPlayerInfo } from "reimu-mc-generator";
 
 await drawPlayerInfo(
   "D_Sketon",
@@ -67,6 +67,8 @@ await drawPlayerInfo(
 ### Server Info
 
 ```ts
+import { drawServerInfo } from "reimu-mc-generator";
+
 await drawServerInfo(
   "D_Sketon's Server",
   [
