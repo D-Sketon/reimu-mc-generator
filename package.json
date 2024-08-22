@@ -1,12 +1,11 @@
 {
   "name": "reimu-mc-generator",
   "version": "0.0.1",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "rollup -c"
+    "build": "tsc"
   },
   "author": "D-Sketon",
   "license": "GPL-3.0-or-later",
@@ -17,10 +16,7 @@
     "minecraftstatuspinger": "^1.1.5"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^22.5.0",
-    "rollup": "^4.21.0",
-    "tslib": "^2.6.3",
     "tsx": "^4.17.0",
     "typescript": "^5.5.4"
   }

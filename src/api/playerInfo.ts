@@ -1,8 +1,9 @@
 import { type CanvasRenderingContext2D } from "canvas";
-import { drawEscapeFont, drawFont, measureText } from "../utils/font";
-import drawSkin from "../partial/skin";
-import config from "../utils/config";
-import drawTitle from "../partial/title";
+
+import { drawEscapeFont, drawFont, measureText } from "../utils/font.js";
+import drawSkin from "../partial/skin.js";
+import config from "../utils/config.js";
+import drawTitle from "../partial/title.js";
 
 const { width, height, background } = config;
 const { dirtHeight } = background;

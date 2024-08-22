@@ -1,10 +1,12 @@
 import { createCanvas } from "canvas";
 import * as fs from "fs/promises";
-import drawBackground from "./partial/background";
-import config from "./utils/config";
-import playerInfo from "./api/playerInfo";
-import drawCopyright from "./partial/copyright";
-import serverInfo from "./api/serverInfo";
+
+import drawBackground from "./partial/background.js";
+import config from "./utils/config.js";
+import playerInfo from "./api/playerInfo.js";
+import drawCopyright from "./partial/copyright.js";
+import serverInfo from "./api/serverInfo.js";
+
 const { width, height } = config;
 
 function buildCanvas() {

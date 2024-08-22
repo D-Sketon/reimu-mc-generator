@@ -4,7 +4,7 @@ import path from "path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-registerFont(path.join(__dirname, "../source/Minecraft_AE.ttf"), { family: "Minecraft AE" });
+registerFont(path.join(__dirname, "../../source/Minecraft_AE.ttf"), { family: "Minecraft AE" });
 
 export function drawFont(
   ctx: CanvasRenderingContext2D,

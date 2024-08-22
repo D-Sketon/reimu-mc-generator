@@ -1,7 +1,8 @@
 import { type CanvasRenderingContext2D } from "canvas";
-import config from "../utils/config";
-import { measureText, drawFont } from "../utils/font";
-import drawShadow from "../utils/shadow";
+
+import config from "../utils/config.js";
+import { measureText, drawFont } from "../utils/font.js";
+import drawShadow from "../utils/shadow.js";
 
 const { width, background } = config;
 const { dirtHeight } = background;

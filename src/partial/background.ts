@@ -1,5 +1,6 @@
 import type { CanvasRenderingContext2D } from "canvas";
-import config from "../utils/config";
+
+import config from "../utils/config.js";
 
 export default function drawBackground(ctx: CanvasRenderingContext2D) {
   const { width, height, background } = config;
