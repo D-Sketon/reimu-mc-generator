@@ -1,6 +1,10 @@
 import { type CanvasRenderingContext2D, registerFont } from "canvas";
+import { fileURLToPath } from "url";
+import path from "path";
 
-registerFont("./source/Minecraft_AE.ttf", { family: "Minecraft AE" });
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+registerFont(path.join(__dirname, "../source/Minecraft_AE.ttf"), { family: "Minecraft AE" });
 
 export function drawFont(
   ctx: CanvasRenderingContext2D,
@@ -28,7 +32,7 @@ export function measureFontHeight(
   ctx: CanvasRenderingContext2D,
   fontSize: number = 20
 ) {
-  return fontSize* 1.2;
+  return fontSize * 1.2;
 }
 
 export function drawEscapeFont(
@@ -110,7 +114,7 @@ export function drawEscapeFont(
       ctx.fillText(textList[i][j], px, py);
       px += measureText(ctx, textList[i][j], fontSize);
     }
-    
+
     px = x;
     py += measureFontHeight(ctx, fontSize);
   }

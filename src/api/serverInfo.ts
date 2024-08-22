@@ -1,8 +1,13 @@
 import mc from "minecraftstatuspinger";
 import { type CanvasRenderingContext2D, Image, loadImage } from "canvas";
+import { fileURLToPath } from "url";
+import path from "path";
 import config from "../utils/config";
 import drawTitle from "../partial/title";
 import { drawEscapeFont, drawFont, measureText } from "../utils/font";
+
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const leftRightRatio = 3;
 const margin = 40;
@@ -38,7 +43,7 @@ async function drawLeftLayout(
     );
     img = await loadImage(imgBuffer);
   } else {
-    img = await loadImage("./source/pack.png");
+    img = await loadImage(path.join(__dirname, "../source/pack.png"));
   }
   ctx.drawImage(
     img,
