@@ -251,6 +251,12 @@ function drawBasicInfo(
   }
 }
 
+function flattenDescription(desc: any): string {
+  if (typeof desc === "string") return desc;
+  if (desc.extra) return desc.extra.map((e: any) => flattenDescription(e)).join("");
+  return desc.text || "";
+}
+
 export default async function serverInfo(
   ctx: CanvasRenderingContext2D,
   serverName: string,
@@ -269,6 +275,7 @@ export default async function serverInfo(
       throw new Error();
     }
     const { favicon, description, players, version } = status!;
+    const descriptionText = flattenDescription(description);
 
     await drawLeftLayout(
       ctx,
@@ -280,8 +287,7 @@ export default async function serverInfo(
       showUrl
     );
     drawRightLayout(ctx, latency!, players.max, players.online);
-    const descriptionText =
-      typeof description === "string" ? description : description.extra[0].text;
+
     const { height: descriptionHeight, paddingTop: descriptionPaddingTop } =
       drawDescription(ctx, descriptionText, basicInfo.length > 0);
 
