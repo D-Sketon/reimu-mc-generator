@@ -1,4 +1,4 @@
-import { createCanvas } from "canvas";
+import { createCanvas } from "@napi-rs/canvas/node-canvas.js";
 import * as fs from "fs/promises";
 
 import drawBackground from "./partial/background.js";

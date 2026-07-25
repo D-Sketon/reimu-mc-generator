@@ -1,4 +1,4 @@
-import { type CanvasRenderingContext2D } from "canvas";
+import { type CanvasRenderingContext2D } from "@napi-rs/canvas/node-canvas.js";
 
 import { drawEscapeFont, drawFont, measureText } from "../utils/font.js";
 import drawSkin from "../partial/skin.js";

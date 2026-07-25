@@ -1,4 +1,4 @@
-import { type CanvasRenderingContext2D, registerFont } from "canvas";
+import { type CanvasRenderingContext2D, registerFont } from "@napi-rs/canvas/node-canvas.js";
 import { fileURLToPath } from "url";
 import path from "path";
 

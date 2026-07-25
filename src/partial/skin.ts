@@ -1,5 +1,4 @@
-import axios from "axios";
-import { type CanvasRenderingContext2D, loadImage } from "canvas";
+import { type CanvasRenderingContext2D, loadImage } from "@napi-rs/canvas/node-canvas.js";
 
 export default async function drawSkin(
   ctx: CanvasRenderingContext2D,
@@ -8,12 +7,7 @@ export default async function drawSkin(
   y: number,
   size: number = 64
 ) {
-  const { data: avatar } = await axios.get(
-    `https://minotar.net/helm/${name}/${size}.png`,
-    {
-      responseType: "arraybuffer",
-    }
-  );
-  const image = await loadImage(Buffer.from(avatar));
+  const res = await fetch(`https://minotar.net/helm/${name}/${size}.png`);
+  const image = await loadImage(Buffer.from(await res.arrayBuffer()));
   ctx.drawImage(image, x, y, size, size);
 }

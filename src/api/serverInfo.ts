@@ -1,5 +1,5 @@
 import mc from "minecraftstatuspinger";
-import { type CanvasRenderingContext2D, Image, loadImage } from "canvas";
+import { type CanvasRenderingContext2D, Image, loadImage } from "@napi-rs/canvas/node-canvas.js";
 import { fileURLToPath } from "url";
 import path from "path";
 
