@@ -1,9 +1,16 @@
 {
   "name": "reimu-mc-generator",
   "version": "0.1.0",
+  "files": [
+    "dist",
+    "source"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "tsc"
   },
@@ -16,7 +23,6 @@
   },
   "devDependencies": {
     "@types/node": "^26.1.1",
-    "tsx": "^4.23.1",
     "typescript": "^5.9.2"
   },
   "repository": {
@@ -27,8 +33,17 @@
   "bugs": {
     "url": "https://github.com/D-Sketon/reimu-mc-generator/issues"
   },
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  },
   "keywords": [
     "minecraft",
-    "canvas"
+    "canvas",
+    "minecraft-server",
+    "minecraft-player",
+    "server-status",
+    "image-generator",
+    "motd"
   ]
 }
